@@ -59,13 +59,23 @@ else {
 
 if (Email_Register_Value === '') {
   setErrorFor(Email_Register, "Email cannot be blank");
-} else {
+} 
+if (Email_Register_Value === '') {
+  setErrorFor(Email_Register, "Email cannot be blank");
+}
+else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email_Register_Value))){
+  setErrorFor(Email_Register, "Please enter a valid email address");
+}
+else {
   setSuccessFor(Email_Register);
 }
 
 
 if (Phone_Register_Value === '') {
   setErrorFor(Phone_Register, "Phone cannot be blank");
+}
+else if (!(/^[0-9]{10,13}$/.test(Phone_Register_Value))) {
+  setErrorFor(PhoneNumber_Register, "Please enter a valid phone number");
 } 
   else {
   setSuccessFor(Phone_Register);
