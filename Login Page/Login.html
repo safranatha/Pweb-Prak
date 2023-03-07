@@ -16,28 +16,25 @@
       <p class=" mt-4" style="font-size: 18px;">Please input username and password before login</p>
 
 
-      <form action="" class="w-25 mt-2 needs-validation" novalidate>
+      <form action="" method="POST" class="w-25 mt-2 needs-validation" novalidate>
 
         <div class="mb-4 d-flex flex-row">
-          <img src="../Env/Vector/User.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <img id="user-icon" src="../Env/Vector/User.svg" class="icon" alt="User Icon" style="width: 15px; margin-right: 10px;">
           <div class="d-flex flex-column w-100">
-            <input type="text" class="form-control rounded " id="Username_Login" placeholder="Username" required>
-            <div id="Username_Valid">
-            </div>
-            <div id="Username_Invalid">
-            </div>
+            <input type="text" class="form rounded  " id="Username_Login" placeholder="Username" required > 
+            <p id="Username_Valid" class="pt-2 ps-1" style="color: red;">
+            </p>
           </div>
         </div>
 
 
         <div class="mb-4 d-flex">
-          <img src="../Env/Vector/Lock.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <img id="password-icon" src="../Env/Vector/Lock.svg" class="icon" alt="User Icon" style="width: 15px; margin-right: 10px;">
           <div class="d-flex flex-column w-100">
-            <input type="password" class="form-control rounded " id="Password_Login" placeholder="Password" required>
-            <div id="Password_Valid" class="valid-feedback ps-1">
-            </div>
-            <div id="Password_Invalid" class="invalid-feedback ps-1">
-            </div>
+            <input type="password" class="form rounded " id="Password_Login" placeholder="Password" required>
+            <p id="Password_Valid" class=" pt-2 ps-1" style="color: red;"">
+            </p>
+            
           </div>
         </div>
         <a href="../Sign Up Page/Register.html"><label class="form-check-label mb-4">Dont have an account
