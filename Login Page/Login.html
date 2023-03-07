@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../Env/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../Env/Css/styles.css">
+  <link rel="icon" href="../Env/Image/minimarket.png">
+</head>
+
+<body class="d-flex flex-column vh-100" style="background-color: #E5E5E5;">
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100">
+    <h1 class="text-center" style="font-size: 50px"">Login</h1>
+      <p class=" mt-4" style="font-size: 18px;">Please input username and password before login</p>
+
+
+      <form action="" class="w-25 mt-2 needs-validation" novalidate>
+
+        <div class="mb-4 d-flex flex-row">
+          <img src="../Env/Vector/User.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <div class="d-flex flex-column w-100">
+            <input type="text" class="form-control rounded " id="Username_Login" placeholder="Username" required>
+            <div id="Username_Valid">
+            </div>
+            <div id="Username_Invalid">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="mb-4 d-flex">
+          <img src="../Env/Vector/Lock.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <div class="d-flex flex-column w-100">
+            <input type="password" class="form-control rounded " id="Password_Login" placeholder="Password" required>
+            <div id="Password_Valid" class="valid-feedback ps-1">
+            </div>
+            <div id="Password_Invalid" class="invalid-feedback ps-1">
+            </div>
+          </div>
+        </div>
+        <a href="../Sign Up Page/Register.html"><label class="form-check-label mb-4">Dont have an account
+            yet?</label></a>
+        <button id="Login-button" type="submit" class="btn btn-primary w-100 fw-semibold">Login</button>
+      </form>
+  </div>
+  <div id="Login-Footer" class="container-fluid ms-0 mt-auto p-0">
+    <img id="footer-image" src="../Env/Vector/Vector.svg">
+  </div>
+  <script src="../Env/bootstrap/js/bootstrap.bundle.js"></script>
+  <script defer src="../Env/js/Login_Validation.js"></script>
+</body>
+
+</html>

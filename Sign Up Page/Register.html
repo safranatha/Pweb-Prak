@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="../Env/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../Env/Css/styles.css">
+  <link rel="icon" href="../Env/Image/minimarket.png">
+</head>
+
+<body class="d-flex flex-column  vh-100" style="background-color: #E5E5E5;">
+
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100">
+    <h1 class="text-center" style="font-size: 50px"">Register</h1>
+    <p class=" text-center mt-4" style="font-size: 18px;">Please Fill Out This Form to Start Creating an Account</p>
+
+      <form action="" class="w-25 mt-2 needs-validation" novalidate>
+        <div class="mb-4 d-flex flex-row">
+          <img src="../Env/Vector/User.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <div class="d-flex flex-column w-100">
+            <input type="text" class="form-control rounded " id="Fullname_Register" placeholder="Fullname" required>
+            <div class="valid-feedback">
+              Succesfull
+            </div>
+            <div class="invalid-feedback ">
+              Incorrect Email Address Format
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4 d-flex">
+          <img src="../Env/Vector/Email.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <div class="d-flex flex-column w-100">
+            <input type="email" class="form-control rounded" id="Email_Register" placeholder="Email Address" required>
+            <div class="valid-feedback">
+              Succesfull
+            </div>
+            <div class="invalid-feedback ">
+              Incorrect Email Address
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4 d-flex">
+          <img src="../Env/Vector/Mobile.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <div class="d-flex flex-column w-100">
+            <input type="text" class="form-control rounded" id="PhoneNumber_Register" placeholder="Phone Number"
+              required>
+            <div class="valid-feedback">
+              Succesfull
+            </div>
+            <div class="invalid-feedback ">
+              Incorrect Phone Number
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4 d-flex">
+          <img src="../Env/Vector/Lock.svg" alt="User Icon" style="width: 15px; margin-right: 10px;">
+          <div class="d-flex flex-column w-100">
+            <input type="password" class="form-control rounded" id="password_Register" placeholder="Create Password"
+              required>
+            <div class="valid-feedback">
+              Succesfull
+            </div>
+            <div class="invalid-feedback ">
+              Incorrect Password
+            </div>
+          </div>
+        </div>
+        <a href="../Login Page/Login.html"><label class="form-check-label mb-4">Already Have An Account</label></a>
+        <button id="Register-button" type="submit" class="btn btn-primary w-100 fw-semibold ">Register</button>
+      </form>
+  </div>
+  <div id="Login-Footer" class="container-fluid ms-0 mt-auto p-0 w-100 ">
+    <img id="footer-image" src="../Env/Vector/Vector.svg">
+  </div>
+  <script src="../Env/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../Env/js/Register_Validation.js""></script>
+</body>
+
+</html>
