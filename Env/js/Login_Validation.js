@@ -24,37 +24,62 @@ function HidePlaceHolder(Element) {
 
 var Username_login = document.getElementById("Username_Login");
 var Password_login = document.getElementById("Password_Login");
-const form = document.getElementsByTagName("form")[0]; // add [0] to get the first form element
+const form = document.querySelector("form");
+
+const Icon = document.querySelector("#user-icon");
+const Icon2 = document.querySelector("#password-icon");
+
 
 HidePlaceHolder(Username_login);
 HidePlaceHolder(Password_login);
 
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
   e.preventDefault();
   checkInputs();
 });
 
-function checkInputs(){
+function checkInputs() {
   const Username_login_Value = Username_login.value.trim();
-  const Password_Login_Value = Password_login.value.trim();
+  const Password_login_Value = Password_login.value.trim();
 
-  if(Username_login_Value === ""){
-     setErrorFor(Username_login, "Username cannot be blank")
+  if (Username_login_Value === '') {
+    setErrorFor(Username_login, "Username cannot be blank");
   }
-  else{
-     setSuccesFor(Username_login);
+  else {
+    setSuccessFor(Username_login);
   }
+
+
+
+  if (Password_login_Value === '') {
+    setErrorFor(Password_login, "Password cannot be blank");
+  } else if (Password_login_Value.length < 8) {
+    setErrorFor(Password_login, "Password must be at least 8 characters long");
+  } else {
+    setSuccessFor(Password_login);
+    form.submit();
+  }
+
+
+
 }
 
-function setErrorFor(input,message){
+
+function setErrorFor(input, message) {
   const formControl = input.parentElement;
-  const display = formControl.getElementById("Username_Valid");
-  display.innerText = message;
-  formControl.className = "form-Control error"
+  const feedback = formControl.querySelector("p");
+  feedback.textContent = message;
+  feedback.style.visibility = "visible"
+  Icon.style.paddingBottom = "25px";
+  Icon2.style.paddingBottom = "35px";
+
 }
 
-function setSuccesFor(input){
-    const formControl = input.parentElement;
-    formControl.className = "form-Control success"
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  const feedback = formControl.querySelector("p");
+  feedback.style.visibility = "hidden"
 }
+
+
