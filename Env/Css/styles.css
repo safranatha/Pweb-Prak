@@ -46,3 +46,11 @@ a{
 }
 
 
+
+#Email_Register::placeholder{
+    padding-left:10px;
+}
+  
+input::placeholder{
+    margin-left:10px;
+}
