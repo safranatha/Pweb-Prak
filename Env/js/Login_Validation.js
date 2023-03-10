@@ -33,9 +33,9 @@ const Icon2 = document.querySelector("#password-icon");
 HidePlaceHolder(Username_login);
 HidePlaceHolder(Password_login);
 
+let hasError = false;
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault();
   checkInputs();
 });
 
@@ -45,26 +45,29 @@ function checkInputs() {
 
   if (Username_login_Value === '') {
     setErrorFor(Username_login, "Username cannot be blank");
+    hasError = true;
   }
   else {
     setSuccessFor(Username_login);
   }
 
-
-
   if (Password_login_Value === '') {
     setErrorFor(Password_login, "Password cannot be blank");
+    hasError = true;
   } else if (Password_login_Value.length < 8) {
     setErrorFor(Password_login, "Password must be at least 8 characters long");
+    hasError = true;
   } else {
     setSuccessFor(Password_login);
-    form.submit();
   }
 
-
-
+  if (!hasError) {
+    form.submit();
+  }
+  else {
+    form.preventDefault();
+  }
 }
-
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
