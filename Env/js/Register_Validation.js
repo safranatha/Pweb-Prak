@@ -103,13 +103,13 @@ function checkInputs() {
   }
 }
 
+const IconList = [Icon1, Icon2, Icon3, Icon4];
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const feedback = formControl.querySelector("p");
   feedback.textContent = message;
   feedback.style.visibility = "visible"
-  const IconList = [Icon1, Icon2, Icon3, Icon4];
   for (let i = 0; i < IconList.length; i++) {
     IconList[i].style.paddingBottom = "35px";
   }
@@ -119,7 +119,6 @@ function setSuccessFor(input) {
   const formControl = input.parentElement;
   const feedback = formControl.querySelector("p");
   feedback.style.visibility = "hidden"
-  const IconList = [Icon1, Icon2, Icon3, Icon4];
   for (let i = 0; i < IconList.length; i++) {
     IconList[i].style.paddingBottom = "35px";
   }
