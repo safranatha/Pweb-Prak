@@ -14,8 +14,6 @@
 })()
 
 
-
-/* Hide PlaceHolder */
 function HidePlaceHolder(Element) {
   Element.addEventListener("click", function () {
     Element.placeholder = "";
