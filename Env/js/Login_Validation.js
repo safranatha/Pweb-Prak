@@ -1,4 +1,5 @@
 
+
 (() => {
   'use strict'
   const forms = document.querySelectorAll('.needs-validation')
@@ -13,13 +14,6 @@
   })
 })()
 
-
-function HidePlaceHolder(Element) {
-  Element.addEventListener("click", function () {
-    Element.placeholder = "";
-  })
-}
-
 var Username_login = document.getElementById("Username_Login");
 var Password_login = document.getElementById("Password_Login");
 const form = document.querySelector("form");
@@ -27,6 +21,12 @@ const form = document.querySelector("form");
 const Icon = document.querySelector("#user-icon");
 const Icon2 = document.querySelector("#password-icon");
 
+
+function HidePlaceHolder(Element) {
+  Element.addEventListener("click", function () {
+    Element.placeholder = "";
+  })
+}
 
 HidePlaceHolder(Username_login);
 HidePlaceHolder(Password_login);
@@ -67,14 +67,16 @@ function checkInputs() {
   }
 }
 
+const IconList = [Icon, Icon2];
+
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const feedback = formControl.querySelector("p");
   feedback.textContent = message;
   feedback.style.visibility = "visible"
-  Icon.style.paddingBottom = "25px";
-  Icon2.style.paddingBottom = "35px";
-
+  for(let i=0;i<IconList.length;i++){
+    IconList[i].style.paddingBottom = "40px";
+  }
 }
 
 function setSuccessFor(input) {
@@ -82,5 +84,3 @@ function setSuccessFor(input) {
   const feedback = formControl.querySelector("p");
   feedback.style.visibility = "hidden"
 }
-
-
