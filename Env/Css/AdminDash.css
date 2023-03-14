@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --color-gradient-start: #e6f1c4;
+    --color-gradient-stop: #c7e8d7;
+    --color-greenish-beige: #cadc63;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+}
+
+.navbar{
+    background-color:transparent !important;
+    max-width:100%; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Icon-Nav{
+    width:1.5vw;
+    height:1.5vw;
+}
+
+.Icon-Nav-Title{
+    width:3vw;
+    height:3vw;
+    object-fit:cover;
+}
+
+#Home-Icon{
+    background-color:white;
+}
+
+.menu-option{
+    height:5vh;
+}
+
+#Dashboard-Menu{
+    background-color:black;
+}
+
+#sidebar{
+    border-right:1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#Amount-1,#Amount-2,#Amount-3{
+    color:white;
+}
+
+#Amount-1{
+    background-color:blue;
+
+}
+
+#Amount-2{
+    background-color:brown;
+}
+
+
+#Amount-3{
+    background-color:orange;
+}
+
+#main-content{
+    margin-left:25%;
+}
+.table{
+    border:1px solid black;
+}
+

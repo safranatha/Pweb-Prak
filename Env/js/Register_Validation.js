@@ -96,7 +96,9 @@ function checkInputs() {
   }
 
   if (!hasError) {
+    alert("Akun Berhasil Dibuat");
     form.submit();
+
   }
   else {
     form.preventDefault();
