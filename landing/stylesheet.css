@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root{
+    --color-gradient-start: #e6f1c4;
+    --color-gradient-stop: #c7e8d7;
+    --color-greenish-beige: #cadc63;
+}
 
+#dibawahNavbar{
+    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+}
 
 /* body {
     min-height: 2000px;
@@ -10,9 +18,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#navbar a{
-    color: white;
+#navbar{
+    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+    
 }
+
+
 
 header {
     background-image: url("header.png");
