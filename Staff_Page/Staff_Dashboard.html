@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff || Dashboard</title>
   <link rel="stylesheet" href="../Env/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="../Env/Css/AdminDash.css">
+  <link rel="stylesheet" href="../Env/Css/SalesPage.css">
   <link rel="icon" href="../Env/Image/minimarket.png">
 </head>
 
@@ -19,22 +19,20 @@
           <img class="Icon-Nav-Title" src="../Env/Image/minimarket.png">
           <h5 class="text-center py-3">Payment & Inventory App</h5>
         </div>
-        <div id="Dashboard-Menu" class="py-3  rounded-pill d-flex align-items-center justify-content-start menu-option mt-5">
+        <div id="Dashboard-Menu"
+          class="py-3 bg-dark rounded-pill d-flex align-items-center justify-content-start menu-option mt-5">
           <a href="#" class="d-flex align-items-center text-decoration-none text-light">
-            <img id="Home-Icon" class="Icon-Nav  ms-5 me-3" src="../Env/Vector/Home.svg">
-            <span class="Desc-Menu" class="text-dark">Dashboard</span>
+            <img id="Home-Icon" class="Icon-Nav bg-light ms-5 me-3" src="../Env/Vector/Payment.svg">
+            <span class="Desc-Menu text-light">Penjualan</span>
           </a>
         </div>
         <div id="Payment-Menu" class="py-3 menu-option mt-3">
           <a href="Sales_Page.html" class="d-flex align-items-center text-decoration-none">
-            <img class="Icon-Nav ms-5 me-3" src="../Env/Vector/Payment.svg">
-            <span class="text-dark">Penjualan</span>
+            <img class="Icon-Nav ms-5 me-3" src="../Env/Vector/Stuff.svg">
+            <span class="text-dark">Penerimaan barang</span>
 
           </a>
         </div>
-        
-
-        
 
         <div id="Akun-Menu" class="py-3 menu-option mt-3">
           <a href="User_Page.html" class="d-flex align-items-center text-decoration-none">
@@ -52,10 +50,10 @@
       </div>
       <!-- End of Sidebar -->
 
-      <div id="main-content" class="col-md-9">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
-          <div class="container-fluid">
-            <p class="navbar-brand">Hello, Staff</p>
+      <div id="main-content" class="col w-50 d-flex flex-column justify-content-center align-items-center mb-5">
+        <nav class="navbar w-100 navbar-expand-lg navbar-light bg-light mt-2">
+          <div class="container-fluid mx-2">
+            <p class="navbar-brand">Hello, Admin</p>
             <div class="navbar-nav ms-auto">
               <p class="mt-2">Muhammad Alfariza Rasendria</p>
               <a class="nav-link" href="#">
@@ -64,204 +62,47 @@
             </div>
           </div>
         </nav>
-        <!-- end of navbar -->
+        <div class="container w-50 d-flex flex-column justify-content-center gap-5 bg-light mt-5 mb-1">
+          <h1 class="text-center mt-5">Add Data</h1>
+          <form action="" method="post" class="d-flex flex-column gap-4">
+            <label for="Id_Barang"> Id Barang<br>
+              <input id="Id_Barang" class="w-100" type="text" required>
+            </label>
+            <label for="Id_Barang"> Nama Barang<br>
+              <input id="Id_Barang" class="w-100" type="text" required>
+            </label>
+            
+            <label for="Id_Barang"> Jumlah barang<br>
+              <input id="Id_Barang" class="w-100" type="number" required>
+            </label>
+            <label for="Id_Barang">Tanggal<br>
+              <input id="Id_Barang" class="w-100" type="date" required>
+            </label>
+            <label for="Id_Barang">Metode Pembayaran<br>
+              <select id="" class="w-100">
+                <option value="">Choose Payment Method</option>
+                <option value="">Cash</option>
+                <option value="">Debit</option>
+              </select>
+            </label>
 
+            <h3 class="mt-4">Total Bayar :</h3>
+            <h5 class="text-danger">200000</h5>
+            <h3 class="mt-4">No Nota :</h3>
+            <h5>01256343252443</h5>
 
-        <div class="container">
-          <p class="mt-4 mb-1 text-center">Admin || Dashboard</p>
-          <p class="mb-5 text-center">14/03/2023</p>
-          <h5 class="pb-4">History Pembayaran</h5>
-          <form action="" method="post">
-            <div class="row gy-3">
-              <div class="col-md-3">
-                <p>Invoice Id</p>
-                <input type="text" class="form-control" placeholder="Input Invoice Id" required>
-              </div>
-              <div class="col-md-3">
-                <p>Tanggal</p>
-                <input type="date" class="form-control" required>
-              </div>
-              <div class="col-md-3">
-                <p>Payment Method</p>
-                <select class="form-select" id="inputGroupSelect01">
-                  <option selected>Choose...</option>
-                  <option value="1">Cash</option>
-                  <option value="2">Credit</option>
-                </select>
-              </div>
-              <div class="col-md-3 mt-5 pt-3">
-                <button type="submit" class="w-50 text-center">Search</button>
-              </div>
+            <div class="d-flex flex-row gap-5 justify-content-start mt-5">
+              <button type="submit" class="bg-success px-3 text-light">Add</button>
+              <button class="bg-danger px-3 text-light">Cancel</button>
             </div>
           </form>
-        </div>
 
-        <div id="table-1" class="container my-5">
-          <table class="table table-bordered table-light text-center">
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Invoice Id</th>
-                <th>Total</th>
-                <th>Date</th>
-                <th>Metode Pembayaran</th>
-                <th>Status Pembayaran</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-        </div>
-
-
-
-
-
-
-        <div class="container my-5">
-          <table class="table table-bordered table-light text-center">
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Id Barang</th>
-                <th>Nama Barang</th>
-                <th>Tanggal Masuk</th>
-                <th>Harga Satuan</th>
-                <th>Jumlah</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>045212554</td>
-                <td>300000</td>
-                <td>15/03/2023</td>
-                <td>Cash</td>
-                <td>Lunas</td>
-        </div>
-
-
-        <div id="container-sell" class="container my-5">
-          <h5 class="mb-4">Total Item Terjual</h5>
-          <div class="row gy-3 gap-5">
-            <div id="Amount-1" class="col-md-3 rounded">
-              <p>2341</p>
-              <p>Total Item Terjual</p>
-              <p class="text-end">2023</p>
-            </div>
-            <div id="Amount-2" class="col-md-3 rounded">
-              <p>2341</p>
-              <p>Total Item Terjual</p>
-              <p class="text-end">2023</p>
-            </div>
-
-            <div id="Amount-3" class="col-md-3 rounded">
-              <p>2341</p>
-              <p>Total Item Terjual</p>
-              <p class="text-end">2023</p>
-            </div>
-          </div>
-        </div>
-        <div id="container-under" class="container my-5">
-          <h5 class="pb-4">Stock</h5>
-          <form action="" method="post">
-            <div class="row gy-3">
-              <div class="col-md-3">
-                <p>Id Barang</p>
-                <input type="text" class="form-control" placeholder="Input Invoice Id" required>
-              </div>
-              <div class="col-md-3">
-                <p>Nama Barang</p>
-                <select class="form-select" id="inputGroupSelect01">
-                  <option selected>Choose...</option>
-                  <option value="1">Cash</option>
-                  <option value="2">Credit</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <p>Tanggal Masuk</p>
-                <input type="date" class="form-control" required>
-                
-              </div>
-              <div class="col-md-3 mt-5 pt-3">
-                <button type="submit" class="w-50 text-center">Search</button>
-              </div>
-            </div>
-            <!-- breakkkkkkkkkkkkk -->
-          </form>
         </div>
       </div>
+    </div>
+  </div>
 
-      <script src="../Env/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../Env/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
