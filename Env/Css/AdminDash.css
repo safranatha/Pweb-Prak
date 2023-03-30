@@ -13,7 +13,11 @@
 }
 
 body{
-    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+    background-color: #FAF9F6;
+}
+
+#navbarUser{
+    background-color: red;
 }
 
 .navbar{
@@ -46,30 +50,32 @@ body{
 }
 
 #sidebar{
-    border-right:1px solid black;
+    /* border-right:1px solid black; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+
 }
 
 #Amount-1,#Amount-2,#Amount-3{
-    color:white;
+    color: #353935;
 }
 
 #Amount-1{
-    background-color:#7ec4cf;
+    background-color:#AFE1AF;
 
 }
 
 #Amount-2{
-    background-color:#ffafcc;
+    background-color:#AFE1AF;
 }
 
 
 #Amount-3{
-    background-color:#f68c70;
+    background-color:#AFE1AF;
 }
 
 #main-content{
-    margin-left:25%;
+    margin-left:20%;
 }
 .table{
     border:1px solid black;
