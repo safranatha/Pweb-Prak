@@ -20,26 +20,20 @@
           <h5 class="text-center py-3">Payment & Inventory App</h5>
         </div>
         <div id="Dashboard-Menu"
-          class="py-3 mt-5  rounded-pill d-flex align-items-center justify-content-start menu-option">
+          class="py-3  rounded-pill d-flex align-items-center justify-content-start menu-option  mt-5">
           <a href="Staff_Dashboard.html" class="d-flex align-items-center text-decoration-none text-light">
-            <img id="Home-Icon" class="Icon-Nav  ms-5 me-3" src="../Env/Vector/Home.svg">
+            <img id="Home-Icon" class="Icon-Nav  ms-5 me-3" src="../Env/Vector/Payment.svg">
             <span class="text-dark Desc-Menu">Pembayaran</span>
           </a>
         </div>
-        <div id="Payment-Menu"
-          class="py-3 rounded-pill d-flex align-items-center justify-content-start menu-option rounded-pill bg-dark">
-          <a href=" #" class="d-flex align-items-center text-decoration-none">
-            <img id="Payment-Icon" class="Icon-Nav ms-5 me-3" src="../Env/Vector/Stuff.svg">
-            <span id="Payment-Menu-Text" class="text-light Payment-Menu">Penerimaan barang</span>
+        <div id="Payment-Menu" class="py-3  menu-option">
+          <a href="Sales_Page.html" class="bg-dark rounded-pill d-flex align-items-center text-decoration-none">
+            <img class="Icon-Nav ms-5 me-3 bg-light" src="../Env/Vector/Stuff.svg">
+            <span class="text-light">Penerimaan barang</span>
           </a>
         </div>
-        <div id="Payment-Menu" class="py-3 menu-option mt-3">
-          <a href="penjualan.html" class="d-flex align-items-center text-decoration-none">
-            <img class="Icon-Nav ms-5 me-3" src="../Env/Vector/Stuff.svg">
-            <span class="text-dark">Pembayaran</span>
-          </a>
-        </div>
-        <div id="Akun-Menu" class="py-3 menu-option mt-3 d-flex align-items-center ">
+
+        <div id="Akun-Menu" class="py-3 menu-option mt-5">
           <a href="User_Page.html" class="d-flex align-items-center text-decoration-none ">
             <img class="Icon-Nav ms-5 me-3" src="../Env/Vector/User.svg">
             <span class="text-dark">Akun</span>
@@ -53,7 +47,7 @@
         </div>
 
       </div>
-      <div id="main-content" class="col-md-9">
+      <div id="main-content" class="col w-50 d-flex flex-column justify-content-center align-items-center mb-5">
         <nav class="navbar w-100 navbar-expand-lg navbar-light bg-light mt-2">
           <div class="container-fluid mx-2">
             <p class="navbar-brand">Hello, Admin</p>
@@ -83,12 +77,12 @@
             <label for="Id_Barang">Tanggal<br>
               <input id="Id_Barang" class="w-100" type="date" required>
             </label>
-            
+
             <label for="Id_Barang">Supplier<br>
               <input id="Id_Barang" class="w-100" type="text" required>
             </label>
 
-            
+
 
             <div class="d-flex flex-row gap-5 justify-content-start mt-5">
               <button type="submit" class="bg-success px-3 text-light">Add</button>
