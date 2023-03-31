@@ -45,3 +45,8 @@ header {
 #Features {
     min-height: 300px;
 }
+
+.card{
+    border-radius: 20px;
+    /* width: 18rem; */
+}
