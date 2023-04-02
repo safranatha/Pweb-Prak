@@ -84,57 +84,93 @@
           </div>
         </nav>
         <!-- end of navbar -->
-        <div id="container-sell" class="container my-5 ms-3">
-          <p class="mt-4 mb-1 text-center">Admin || Dashboard</p>
-          <p class="mb-5 text-center">14/03/2023</p>
-          <h5 class="mb-4">Monthly Report</h5>
-          <div class="row gy-3 gap-5">
-            <div class="d-flex flex-row gap-4 w-100">
-            <a href="../Admin_Page/Report.html" class="w-75 text-decoration-none"><div id="Amount-1" class="rounded">
-              <p>Total Income</p>
-              <p>Rp. 2341</p>
-              <p class="text-end">03/2023</p>
-            </div></a>
-            <a href="../Admin_Page/Report.html" class="w-75 text-decoration-none">
-            <div id="Amount-2" class=" rounded">
-              <p>Total Item Terjual</p>
-              <p>2341 Item</p>
-              <p class="text-end">03/2023</p>
-            </div></a>
-
-            <a href="../Admin_Page/Report.html" class="w-75 me-3 text-decoration-none">
-            <div id="Amount-3" class=" rounded" >
-              <p>Total Transaksi</p>
-              <p>2341</p>
-              <p class="text-end">03/2023</p>
-            </div></a>
-          </div>
-          </div>
-        </div>
-
-        <div id="container-sell" class="container my-5 ms-3">
-          <div class="row gy-3 gap-5">
-            <div class="d-flex flex-row gap-4 w-100">
-            <a href="../Admin_Page/admin_dashboard_histPemb.html" class="w-75 text-decoration-none"><div id="Amount-1" class="rounded">
-              <p>History Pembayaran</p>
-            </div></a>
-            <a href="../Admin_Page/admin_dashboard_stockBarang.html" class="w-75 text-decoration-none">
-            <div id="Amount-2" class=" rounded">
-              <p>Stock Barang</p>
-              
-            </div></a>
-
-          </div>
-          </div>
-        </div>
-
-
         
 
+        <div class="container">
+          <h5 class="pb-4 mt-5">Stock Barang</h5>
+          <form action="" method="post">
+            <div class="row gy-3">
+              <div class="col-md-3">
+                <p>Id Barang</p>
+                <input type="text" class="form-control" placeholder="Input Invoice Id" required>
+              </div>
+              <div class="col-md-3">
+                <p>Nama Barang</p>
+                <input type="text" class="form-control" placeholder="Input Nama Barang" required>
+              </div>
+              <div class="col-md-3">
+                <p>Tanggal Masuk</p>
+                <input type="date" class="form-control" required>
 
-
-       
-      </div>
+              </div>
+              <div class="col-md-3 mt-5 pt-3">
+                <button type="submit" class="w-50 text-center">Search</button>
+              </div>
+            </div>
+            <!-- breakkkkkkkkkkkkk -->
+          </form>
+        </div>
+        
+        <div class="container mt-3">
+          <table class="table table-borderless  text-center">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Id Barang</th>
+                <th>Nama Barang</th>
+                <th>Tanggal Masuk</th>
+                <th>Harga Satuan</th>
+                <th>Jumlah</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>045212554</td>
+                <td>300000</td>
+                <td>15/03/2023</td>
+                <td>Cash</td>
+                <td>Lunas</td>
+                <td><a href="form_control.html"><i class="fa-solid fa-pencil pencil" style="color: #000000;"></i></a>
+                  <i class="fa-solid fa-trash" style="color: #000000;"></i></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>045212554</td>
+                <td>300000</td>
+                <td>15/03/2023</td>
+                <td>Cash</td>
+                <td>Lunas</td>
+                <td><a href="form_control.html"><i class="fa-solid fa-pencil pencil" style="color: #000000;"></i></a><i class="fa-solid fa-trash" style="color: #000000;"></i></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>045212554</td>
+                <td>300000</td>
+                <td>15/03/2023</td>
+                <td>Cash</td>
+                <td>Lunas</td>
+                <td><a href="form_control.html"><i class="fa-solid fa-pencil pencil" style="color: #000000;"></i></a><i class="fa-solid fa-trash" style="color: #000000;"></i></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>045212554</td>
+                <td>300000</td>
+                <td>15/03/2023</td>
+                <td>Cash</td>
+                <td>Lunas</td>
+                <td><a href="form_control.html"><i class="fa-solid fa-pencil pencil" style="color: #000000;"></i></a><i class="fa-solid fa-trash" style="color: #000000;"></i></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>045212554</td>
+                <td>300000</td>
+                <td>15/03/2023</td>
+                <td>Cash</td>
+                <td>Lunas</td>
+                <td><a href="form_control.html"><i class="fa-solid fa-pencil pencil" style="color: #000000;"></i></a><i class="fa-solid fa-trash" style="color:#000000;"></i></td>
+        </div>
 
       <script src="../Env/bootstrap/js/bootstrap.bundle.js"></script>
       
