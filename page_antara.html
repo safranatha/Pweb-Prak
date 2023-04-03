@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="Env/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="Env/Css/LoginRegister.css" />
-    <link rel="icon" href="Env/Image/minimarket.png" />
-  </head>
 
-  <body class="d-flex flex-column vh-100" style="background-color: #e5e5e5">
-    <div
-      class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Env/bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="Env/Css/LoginRegister.css" />
+  <link rel="icon" href="Env/Image/minimarket.png" />
+</head>
 
-      <button
-        id="Login-button"
-        type="submit"
-        class="btn btn-primary w-50 fw-semibold">
-        <a
-          href="Login Page/Login.html"
-          class="text-decoration-none">
-          Login As Admin
-        </a>
-      </button>
+<body class="d-flex flex-column vh-100" style="background-color: #e5e5e5">
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100">
+    <form action="Login Page/Login.html" class="w-100 d-flex justify-content-center align-items-center">
+      <button id="Login-button" type="submit" class="btn btn-primary w-50 fw-semibold">
+        Login As Admin
+      </button type="submit">
+    </form>
 
-      <button
-        id="Login-button"
-        type="submit"
-        class="btn btn-primary w-50 fw-semibold mt-5">
-        <a
-          href="Login Page/Login Staff.html"
-          class="text-decoration-none">
-          Login As Staff
-        </a>
-      </button>
-    </div>
-    <div id="Login-Footer" class="container-fluid ms-0 mt-auto p-0">
-      <img id="footer-image" src="Env/Vector/Vector.svg" />
-    </div>
-    <script src="Env/bootstrap/js/bootstrap.bundle.js"></script>
-    <script defer src="Env/js/Login_Validation.js"></script>
-  </body>
+    <form action="Login Page/Login Staff.html" class="w-100 d-flex justify-content-center align-items-center">
+    <button id="Login-button" type="submit" class="btn btn-primary w-50 fw-semibold mt-5">
+        Login As Staff
+    </button>
+    </form>
+  </div>
+  <div id="Login-Footer" class="container-fluid ms-0 mt-auto p-0">
+    <img id="footer-image" src="Env/Vector/Vector.svg" />
+  </div>
+  <script src="Env/bootstrap/js/bootstrap.bundle.js"></script>
+  <script defer src="Env/js/Login_Validation.js"></script>
+</body>
+
 </html>
