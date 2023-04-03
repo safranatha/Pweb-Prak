@@ -109,11 +109,26 @@ input::placeholder{
 }
 
 
-.container{
-    border-radius: 20px;
-    background-color: #f5f5f5;
+
+/* .table{
+    border:1px solid black;
+} */
+
+.menu-option{
+    height:5vh;
 }
 
-.table{
-    border:1px solid black;
+#Amount-1,#Amount-2,#Amount-3{
+    color: #353935;
+    
 }
+#Amount-1{
+    background-color: var(--color-gradient-stop);
+
+}
+
+#Amount-2{
+    background-color: var(--color-gradient-stop);
+    
+}
+
