@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --color-gradient-start: #d7e6de;
+    --color-gradient-stop: #93d4b3;
+    --color-greenish-beige: #cadc63;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #E5E4E2;
+}
+
+#navbarUser{
+    background-color: red;
+}
+
+.navbar{
+    background-color:white;
+    max-width:100%; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Icon-Nav{
+    width:1.5vw;
+    height:1.5vw;
+}
+
+.Icon-Nav-Title{
+    width:3vw;
+    height:3vw;
+    object-fit:cover;
+}
+
+#Home-Icon{
+    background-color:white;
+}
+
+.menu-option{
+    height:5vh;
+}
+
+#Dashboard-Menu{
+    background-color:black;
+}
+
+#sidebar{
+    /* border-right:1px solid black; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+
+}
+
+#Amount-1,#Amount-2,#Amount-3{
+    color: #353935;
+    
+}
+
+#Amount-1{
+    background-color: var(--color-gradient-stop);
+
+}
+
+#Amount-2{
+    background-color: var(--color-gradient-stop);
+    
+}
+
+
+#Amount-3{
+    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+    
+}
+
+#main-content{
+    margin-left:20%;
+}
+
+
+.pencil{
+    padding-right: 10px;
+}
+
+/* .table{
+    border:1px solid black;
+} */
+
+.container{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
