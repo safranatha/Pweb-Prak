@@ -61,7 +61,7 @@ a{
     color:#093545;
 }
 
-.btn, input{
+.btn, input,select{
     color:#000000;
     height:45px;
     border-radius:10px;
