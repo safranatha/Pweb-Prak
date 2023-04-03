@@ -114,7 +114,8 @@ input::placeholder{
     background-color: #f5f5f5;
 }
 
-#containerTable{
+.container{
     background-color: #f5f5f5;
-    border-radius: 20px;
+    border-radius: 30px;
+    box-shadow: 7px 7px 8px #888888
 }
