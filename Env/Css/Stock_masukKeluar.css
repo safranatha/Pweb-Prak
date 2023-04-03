@@ -109,11 +109,10 @@ input::placeholder{
 }
 
 
-.table{
+
+/* .table{
     border:1px solid black;
-}
-
-
+} */
 
 .menu-option{
     height:5vh;
@@ -131,4 +130,9 @@ input::placeholder{
 #Amount-2{
     background-color: var(--color-gradient-stop);
     
+}
+
+.container{
+    background-color: #f5f5f5;
+    border-radius: 20px;
 }
