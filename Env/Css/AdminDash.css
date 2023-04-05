@@ -73,7 +73,7 @@ body{
 
 
 #Amount-3{
-    background-image:linear-gradient(to right, var(--color-gradient-start),var(--color-gradient-stop));
+    background-color: var(--color-gradient-stop);
     
 }
 
